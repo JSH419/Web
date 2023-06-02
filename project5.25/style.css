@@ -36,7 +36,7 @@ li{
     margin:0 auto;
   }
   header{
-    position:absolute; /* 13.3.3 absolute -> fixed */
+    position:fixed; /* 13.3.3 absolute -> fixed */
     color:black; /* 13.3.3 black -> white */
     top:0;
     z-index:1;
@@ -82,6 +82,20 @@ li{
     }
   }
   /* End header.css */
+
+  header.active{
+    background-color: #000;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }    
+  }
 
   main{
     width:100%;

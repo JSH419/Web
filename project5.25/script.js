@@ -1,3 +1,4 @@
+// 텍스트 작성과 삭제. 즉시 실행되는 함수
 (function(){
     const spanE1 = document.querySelector("main h2 span");
     const txtArr = ['Web publisher', 'Front-End Developer', 'Web UI Designer', 'UX Designer', 'Back-END Developer'];
@@ -29,3 +30,22 @@ function deleteTxt(){
 writeTxt();
  
 })();
+
+// 수직 스크롤 발생 시 header 태그에 active 클래스 추가 및 삭제
+(function(){
+    const headerE1 = document.querySelector("header")
+    window.addEventListener("scroll", function(){
+        this.requestAnimationFrame(scrollCheck);
+    });
+    
+    function scrollCheck(){
+        const browserScrollY = window.scrollY ? window.scrollY : window.pageYOffset;
+        if(browserScrollY > 0){
+            headerE1.classList.add('active');
+        }else{
+            headerE1.classList.remove('active');
+        }
+        console.log('scroll')
+    }
+})();
+
