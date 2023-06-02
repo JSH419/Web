@@ -1,0 +1,64 @@
+section{
+    font-family: Noto Sans Korean, sans-serif;
+    padding:1rem 0;
+}
+section:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+seciont .about-self::afetr{
+    content:'';
+    clear: both;
+    display: block;
+}
+section .title{
+    margin-bottom: 3rem;
+}
+section .title h4{
+    font: size 1.35em;
+    color:#ed4848;
+    position:relative;
+}
+section .title h2{
+    font-size:3.5rem;
+}
+section .title p{
+    font-size:1.15rem;
+}
+section .about-self{
+    float: left;
+}
+section .about-self .left{
+    float:left;
+    width:50%;
+    height: 100%;
+}
+section .about-self .left img{
+    width:100%
+}
+section .about-self .right{
+    width:50%;
+    float:left;
+    padding: 0 
+}
+section .about-self .right h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+section .about-self .right h3 strong{
+    color: #ed4848;
+}  
+section .about-self .right p{
+    font-size: 1.15rem;
+    margin : 1rem 0;
+}  
+section .about-self .right .social a{
+    font-size: 3rem;
+    margin-right:0.3rem;
+}
+/*가운데 정렬을 하고 싶었다*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
